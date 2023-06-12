@@ -23,13 +23,7 @@
 				"type": "AzureKeyVaultSecret",
 				"store": {
 					"referenceName": "keyVaultLinkedservice",
-					"type": "LinkedServiceReference",
-					"parameters": {
-						"keyVaultName": {
-							"value": "@linkedService().keyVaultName",
-							"type": "Expression"
-						}
-					}
+					"type": "LinkedServiceReference"
 				},
 				"secretName": "synapseSqlLoginPassword"
 			}
